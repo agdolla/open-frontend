@@ -14,15 +14,20 @@ class Project extends Component {
 
   render() {
     const { isFeatured, lang, team, title, desc, img } = this.props;
-    const classname = classnames('project', isFeatured && 'featured');
+    const classname = classnames('project', lang, isFeatured && 'featured');
 
     return (
       <div className={classname}>
-        <h6>
-          {lang} &middot; {team}
-        </h6>
-        <h3>{title}</h3>
-        <p>{desc}</p>
+        {isFeatured && img && <img src={img} />}
+        <div className="content">
+          <h6>
+            <span className="lang">{lang}</span>{' '}
+            <span className="spacer">&middot;</span>{' '}
+            <span className="team">{team}</span>
+          </h6>
+          <h3>{title}</h3>
+          <p>{desc}</p>
+        </div>
       </div>
     );
   }
