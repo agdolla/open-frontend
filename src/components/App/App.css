@@ -1,0 +1,204 @@
+/* Color palette
+
+Background: #f3f5fb;
+Main text color: #3e53b8;
+Active link: #0c14f0;
+Black: #000000;
+
+*/
+
+/* TODO: Use Less or Sass */
+
+@font-face {
+  font-family: 'Postmates-Std-Regular';
+  src: url('../../fonts/Postmates-Std-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/Postmates-Std-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../fonts/Postmates-Std-Regular.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../../fonts/Postmates-Std-Regular.ttf')
+      format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Postmates-Std-Bold';
+  src: url('../../fonts/Postmates-Std-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/Postmates-Std-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../fonts/Postmates-Std-Bold.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../../fonts/Postmates-Std-Bold.ttf')
+      format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'TiemposText-Regular';
+  src: url('../../fonts/TiemposText-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/TiemposText-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('../../fonts/TiemposText-Regular.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../../fonts/TiemposText-Regular.ttf')
+      format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Basic CSS reset with normailize */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #f3f5fb;
+  color: #3e53b8;
+  font-family: 'TiemposText-Regular';
+  font-weight: normal;
+}
+
+a {
+  color: #3e53b8;
+  text-decoration: none;
+}
+
+/* Main app container */
+.App {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-bottom: 40px;
+}
+
+header .helix {
+  text-align: right;
+}
+
+.brandmark {
+  width: 44.6px;
+  height: 32px;
+}
+
+h1 {
+  font-family: 'Postmates-Std-Bold';
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -4.2px;
+  color: #000;
+  margin: 20px 0 30px;
+}
+
+header p {
+  font-family: 'TiemposText-Regular';
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+nav {
+  border-bottom: 1px solid #eee;
+}
+
+nav ol {
+  list-style: none;
+  overflow: hidden;
+}
+
+nav ol li {
+  align-items: center;
+  margin-right: 32px;
+  float: left;
+}
+
+nav ol a {
+  padding: 24px 0;
+  display: block;
+  border-bottom: 1px solid transparent;
+  font-family: 'Postmates-Std-Regular';
+  font-weight: normal;
+}
+
+nav ol li .active,
+nav ol li a:hover {
+  color: #0c14f0;
+  border-bottom: 1px solid #0c14f0;
+  font-family: 'Postmates-Std-Bold';
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+main .project {
+  background: #fff;
+}
+
+main .project .content {
+  padding: 36px;
+}
+
+main .project .content h6 {
+  font-family: 'Postmates-Std-Bold';
+  font-size: 11px;
+  line-height: 36px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+main .project.go .content h6 .lang {
+  color: #001dff;
+}
+
+main .project.mysql .content h6 .lang {
+  color: #038fef;
+}
+
+main .project.java .content h6 .lang {
+  color: #814c21;
+}
+
+main .project.swift .content h6 .lang {
+  color: #fb8b39;
+}
+
+main .project.ruby .content h6 .lang {
+  color: #e72619;
+}
+
+main .project .content h6 .spacer {
+  padding: 0 6px;
+}
+
+main .project .content h3 {
+  font-family: 'Postmates-Std-Bold';
+  padding: 0 0 12px;
+  font-size: 32px;
+  letter-spacing: -1.5px;
+  color: #000;
+}
+
+main .project .content p {
+  line-height: 24px;
+}
+
+main .featured {
+  /* Shortcut for grid-column-start: 1 and grid-column-end: 3 */
+  grid-column: 1 / 3;
+}
+
+main .featured img {
+  max-width: 344px;
+  max-height: 304px;
+  float: right;
+  margin: -12px 0 0 36px;
+}
