@@ -11,11 +11,13 @@ export default {
   }),
   getRoutes: async () => [],
   webpack: (config, { defaultLoaders }) => {
+    // eslint-disable-next-line no-param-reassign
     config.resolve.extensions = [
       ...config.resolve.extensions,
       ...typescriptWebpackPaths.resolve.extensions,
     ];
 
+    // eslint-disable-next-line no-param-reassign
     config.resolve.alias = typescriptWebpackPaths.resolve.alias;
 
     config.module.rules[0].oneOf.unshift({
