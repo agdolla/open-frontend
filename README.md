@@ -8,5 +8,5 @@ Install dependencies and start the app:
 
 ```sh
 yarn
-yarn run start
+yarn start
 ```

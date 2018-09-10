@@ -1,0 +1,11 @@
+{
+  "presets": ["react-static/babel-preset.js"],
+  "plugins": ["babel-plugin-emotion"],
+  "env": {
+    "dev": {
+      "plugins": [
+        ["emotion", { "sourceMap": true, "autoLabel": true }]
+      ]
+    }
+  }
+}
