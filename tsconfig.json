@@ -40,6 +40,9 @@
       "es2018"
     ]
   },
+  "include": [
+    "./src"
+  ],
   "exclude": [
     "dist/**/*",
     "public/**/*",

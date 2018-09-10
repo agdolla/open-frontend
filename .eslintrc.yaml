@@ -20,20 +20,8 @@ globals:
 
 settings:
   import/resolver:
-    node:
-      extensions:
-        - .js
-        - .jsx
-        - .tsx
-        - .ts
     webpack:
-      config:
-        resolve:
-          extensions:
-            - .js
-            - .jsx
-            - .tsx
-            - .ts
+      config: webpack.config.js
 
 rules:
   import/prefer-default-export: off
@@ -58,12 +46,12 @@ rules:
       - .jsx
       - .tsx
   import/extensions:
-    - error
-    - always
     - js: never
       jsx: never
       ts: never
       tsx: never
+    - error
+    - always
   import/no-extraneous-dependencies:
     - error
     - devDependencies:

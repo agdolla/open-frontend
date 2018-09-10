@@ -15,7 +15,7 @@ export default {
     config.resolve.extensions = [
       ...config.resolve.extensions,
       ...typescriptWebpackPaths.resolve.extensions,
-    ]
+    ];
 
     config.resolve.alias = typescriptWebpackPaths.resolve.alias;
 

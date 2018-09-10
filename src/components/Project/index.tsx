@@ -9,25 +9,19 @@ interface Props {
   img?: string;
 }
 
-class Project extends React.Component<Props> {
-  render() {
-    const { isFeatured, language, team, title, description, img } = this.props;
-
-    return (
-      <div>
-        {isFeatured && img && <img src={img} />}
-        <div className="content">
-          <h6>
-            <span className="language">{language}</span>{' '}
-            <span className="spacer">&middot;</span>{' '}
-            <span className="team">{team}</span>
-          </h6>
-          <h3>{title}</h3>
-          <p>{description}</p>
-        </div>
-      </div>
-    );
-  }
-}
+const Project = ({ isFeatured, language, team, title, description, img }: Props) => (
+  <div>
+    {isFeatured && img && <img src={img} alt={title} />}
+    <div className="content">
+      <h6>
+        <span className="language">{language}</span>{' '}
+        <span className="spacer">&middot;</span>{' '}
+        <span className="team">{team}</span>
+      </h6>
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+  </div>
+);
 
 export default Project;
