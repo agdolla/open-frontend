@@ -9,4 +9,4 @@ module.exports = {
     alias: aliases,
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
-}
+};

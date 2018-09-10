@@ -1,4 +1,3 @@
-import axios from 'axios';
 import path from 'path';
 
 const typescriptWebpackPaths = require('./webpack.config.js');
@@ -11,7 +10,7 @@ export default {
     title: 'Postmates Open Source',
   }),
   getRoutes: async () => [],
-  webpack: (config, { defaultLoaders })=> {
+  webpack: (config, { defaultLoaders }) => {
     config.resolve.extensions = [
       ...config.resolve.extensions,
       ...typescriptWebpackPaths.resolve.extensions,
@@ -35,7 +34,7 @@ export default {
         },
       ],
     });
-  
+
     return config;
   },
-}
+};

@@ -38,7 +38,7 @@ rules:
   
   default-case: off
 
-  bfe/no-default-emotion-import: error
+  bfe/no-default-emotion-import: off
 
   react/jsx-filename-extension:
     - error
@@ -59,6 +59,7 @@ rules:
       - '**/*.spec.jsx'
       - '**/*.spec.ts'
       - '**/*.spec.tsx'
+      - webpack.config.js
 overrides:
   - parser: "typescript-eslint-parser"
     files:
