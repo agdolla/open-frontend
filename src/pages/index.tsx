@@ -2,8 +2,6 @@ import * as React from 'react';
 import Header from 'components/Header';
 import Project from 'components/Project';
 
-// TEST pre push
-
 const HomePage = () => (
   <div className="App">
     <Header />
