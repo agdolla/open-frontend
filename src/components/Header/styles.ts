@@ -4,8 +4,8 @@ import { Colors } from 'style/variables/palette';
 import { rgba } from 'utils/color';
 
 export const Wrapper = styled.header`
-  border-bottom: 1px solid ${rgba(Colors.BlueMedium, .15)};
-`
+  border-bottom: 1px solid ${rgba(Colors.BlueMedium, 0.15)};
+`;
 
 export const Content = styled.div`
   display: flex;

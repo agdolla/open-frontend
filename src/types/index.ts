@@ -4,7 +4,7 @@ export interface Project {
   language?: string;
   team?: string;
   img?: string;
-  url?: string,
-  slug?: string,
-  isFeatured? : boolean;
+  url?: string;
+  slug?: string;
+  isFeatured?: boolean;
 }

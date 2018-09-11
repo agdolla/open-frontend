@@ -15,6 +15,6 @@ export const projects: Project[] = [
     language: 'Go',
     team: 'Infrastructure',
     img: '',
-    isFeatured : true,
+    isFeatured: true,
   },
 ];

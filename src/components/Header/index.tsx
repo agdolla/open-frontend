@@ -2,7 +2,7 @@ import * as React from 'react';
 import Navbar from 'components/Navbar';
 import brandmark from 'images/brandmark.svg';
 
-import { Wrapper, Content, Title, Description } from './styles'
+import { Wrapper, Content, Title, Description } from './styles';
 
 const Header = () => (
   <Wrapper>
