@@ -9,7 +9,12 @@ export default {
   getSiteData: () => ({
     title: 'Postmates Open Source',
   }),
-  getRoutes: async () => [],
+  getRoutes: async () => [
+    {
+      path: '/',
+      component: 'src/pages/Home',
+    },
+  ],
   webpack: (config, { defaultLoaders }) => {
     // eslint-disable-next-line no-param-reassign
     config.resolve.extensions = [

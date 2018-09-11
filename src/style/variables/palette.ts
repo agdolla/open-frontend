@@ -22,6 +22,10 @@ export enum Colors {
   HeaderBlue = '#DDEEF7',
   WarningPeach = '#FF8771',
   Yellow = '#FFFD3C',
+  LightBlue = '#F4F5FB',
+  BlueText = '#4F65BE',
+  BlueBright = '#0C14F0',
+  BlueMedium = '#5F73C6',
 }
 
 function readableColor(bgColor: Color) {

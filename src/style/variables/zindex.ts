@@ -1,4 +1,3 @@
-// Z-indices used throughout application
 export default {
   min: -99999,
   z0: 0,

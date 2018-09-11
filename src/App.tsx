@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Router, Link } from 'react-static';
+import { Router } from 'react-static';
 import injectGlobals from 'style/globals';
 
 // NOTE: Generated at run time
@@ -10,7 +10,7 @@ injectGlobals();
 
 const App = () => (
   <Router>
-    <div className="content">
+    <div>
       <Routes />
     </div>
   </Router>

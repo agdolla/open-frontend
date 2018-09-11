@@ -30,6 +30,7 @@ const matrix = {
   36: [undefined, undefined, -2.08, undefined],
   42: [undefined, undefined, -2.40, undefined],
   48: [undefined, undefined, -1.8, undefined],
+  64: [undefined, undefined, -2.2, undefined],
   72: [undefined, undefined, -3.00, undefined],
 };
 

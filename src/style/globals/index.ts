@@ -34,7 +34,7 @@ const globalStyles = css`
     font-weight, size, spacing come from matrix defined in style/fonts,
     however, emotion does not allow composing with nested selectors */
     ${fontMatrix.s16.regular};
-    background-color: ${palette.Colors.White};
+    background-color: ${palette.Colors.LightBlue};
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

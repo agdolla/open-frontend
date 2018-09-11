@@ -1,15 +1,7 @@
 import * as React from 'react';
+import { Project } from 'types';
 
-interface Props {
-  isFeatured: boolean;
-  language: string;
-  team: string;
-  title: string;
-  description: string;
-  img?: string;
-}
-
-const Project = ({ isFeatured, language, team, title, description, img }: Props) => (
+const Project = ({ isFeatured, language, team, title, description, img }: Project) => (
   <div>
     {isFeatured && img && <img src={img} alt={title} />}
     <div className="content">
