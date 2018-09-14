@@ -23,4 +23,9 @@ export const Description = styled.p`
   ${teimposText.s18.regular};
   color: ${Colors.BlueText};
   line-height: 1.56;
+  padding-right: 40px;
+`;
+
+export const TextWrapper = styled.div`
+  padding-right: 80px;
 `;

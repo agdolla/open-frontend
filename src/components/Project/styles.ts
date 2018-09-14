@@ -3,11 +3,26 @@ import fonts from 'style/fonts';
 import tiemposText from 'style/fonts/tiemposText';
 import { Colors } from 'style/variables/palette';
 
-export const Wrapper = styled.div<{ isFeatured?: boolean }>`
+export const ExternalLink = styled.a<{ isFeatured?: boolean }>`
+  display: flex;
   background: ${Colors.White};
+  transition: box-shadow 0.3s ease;
+  ${({ isFeatured }) => isFeatured ? 'grid-column: 1 / 3;' : ''}
+
+  &:hover {
+    box-shadow: 0 10px 24px 0 rgba(63, 86, 181, 0.2);
+  }
+`;
+
+export const Wrapper = styled.div`
   padding: 32px;
   min-height: 296px;
-  ${({ isFeatured }) => isFeatured ? 'grid-column: 1 / 3;' : ''}
+`;
+
+export const Image = styled.img`
+  width: 300px;
+  height: 100%;
+  margin-top: -8px;
 `;
 
 export const Content = styled.div`
