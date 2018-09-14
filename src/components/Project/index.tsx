@@ -41,6 +41,6 @@ const Project = ({
       {isFeatured && img && <Image src={img} alt={title} />}
     </ExternalLink>
   );
-}
+};
 
 export default Project;

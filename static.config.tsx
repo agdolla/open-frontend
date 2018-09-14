@@ -1,5 +1,6 @@
 import * as React from 'react';
-import  * as path from 'path';
+import * as path from 'path';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { renderStylesToString } from 'emotion-server';
 import { projects } from './src/utils/data';
 import { buildTeamRoutes } from './src/utils/route';
@@ -14,6 +15,7 @@ interface DocumentProps {
   Head: React.ComponentClass;
   Body: React.ComponentClass;
   renderMeta: any;
+  children: any;
 }
 
 export default {
@@ -37,33 +39,28 @@ export default {
       },
       ...teamRoutes,
     ];
+    // eslint-disable-next-line no-console
     console.log('Routes = ', routes);
     return routes;
   },
   renderToHtml: (render, Comp) => renderStylesToString(render(<Comp />)),
-  Document: class CustomHTML extends React.Component<DocumentProps> {
-    render() {
-      const { Html, Head, Body, children, renderMeta } = this.props;
+  Document: ({ Html, Head, Body, children, renderMeta }: DocumentProps) => (
+    <Html>
+      <Head>
+        <title>{TITLE}</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="manifest" href={`${ROOT_URL}/manifest.json`} />
+        <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
+        {/* Add social meta tags, sentry */}
 
-      return (
-        <Html>
-          <Head>
-            <title>{TITLE}</title>
-            <meta charSet="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="manifest" href={`${ROOT_URL}/manifest.json`} />
-            <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
-            {/* Add social meta tags, sentry */}
-
-            {renderMeta.styleTags}
-          </Head>
-          <Body>
-            {children}
-          </Body>
-        </Html>
-      );
-    }
-  },
+        {renderMeta.styleTags}
+      </Head>
+      <Body>
+        {children}
+      </Body>
+    </Html>
+  ),
   webpack: (config, { defaultLoaders }) => {
     // eslint-disable-next-line no-param-reassign
     config.resolve.extensions = [

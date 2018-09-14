@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectList = ({ projects }: Props) => (
   <List>
-    {projects.map(p => <Project key={p.title}  {...p} />)}
+    {projects.map(p => <Project key={p.title} {...p} />)}
   </List>
 );
 

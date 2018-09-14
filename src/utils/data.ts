@@ -3,37 +3,37 @@ import { Project, Language, Teams } from './types';
 export const languages: Record<string, Language> = {
   go: {
     name: 'Go',
-    color: '#001DFF'
+    color: '#001DFF',
   },
   mySql: {
     name: 'MySQL',
-    color: '#038FEF'
+    color: '#038FEF',
   },
   java: {
     name: 'Java',
-    color: '#A5C845'
+    color: '#A5C845',
   },
   swift: {
     name: 'Swift',
-    color: '#FB8B39'
+    color: '#FB8B39',
   },
   javaScript: {
     name: 'JavaScript',
-    color: '#EFD427'
+    color: '#EFD427',
   },
   python: {
     name: 'Python',
-    color: '#3A79AC'
+    color: '#3A79AC',
   },
   rust: {
     name: 'Rust',
-    color: '#814C21;'
+    color: '#814C21',
   },
   elixir: {
     name: 'Elixir',
-    color: '#E72619;'
+    color: '#E72619',
   },
-}
+};
 
 export const projects: Project[] = [
   {
@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description: 'Have you ever wondered what your images could look like if it were put through a virtual blender along with a heavy dose of rainbow glitter? Well now you won’t have to wonder—introducing Raster from Postmates.',
     language: languages.go,
     team: Teams.Infrastructure,
-    img: "/images/tmp.png",
+    img: '/images/tmp.png',
     github: 'https://github.com',
     isFeatured: true,
   },

@@ -15,7 +15,7 @@ const Navbar = ({ location }: RouteComponentProps<object>) => (
           All Topics
         </StyledLink>
       </Item>
-      {Object.keys(Teams).map(team => {
+      {Object.keys(Teams).map((team) => {
         const teamSlug = convertNameToSlug(team);
         return (
           <Item key={team}>
@@ -23,7 +23,7 @@ const Navbar = ({ location }: RouteComponentProps<object>) => (
               {team}
             </StyledLink>
           </Item>
-        )
+        );
       })}
     </List>
   </nav>
