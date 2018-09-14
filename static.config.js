@@ -1,20 +1,8 @@
 "use strict";
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = function (d, b) {
-        extendStatics = Object.setPrototypeOf ||
-            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-        return extendStatics(d, b);
-    }
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 exports.__esModule = true;
 var React = require("react");
 var path = require("path");
+// eslint-disable-next-line import/no-extraneous-dependencies
 var emotion_server_1 = require("emotion-server");
 var data_1 = require("./src/utils/data");
 var route_1 = require("./src/utils/route");
@@ -41,29 +29,23 @@ exports["default"] = {
                 }); }
             }
         ].concat(teamRoutes);
+        // eslint-disable-next-line no-console
         console.log('Routes = ', routes);
         return routes;
     },
     renderToHtml: function (render, Comp) { return emotion_server_1.renderStylesToString(render(React.createElement(Comp, null))); },
-    Document: /** @class */ (function (_super) {
-        __extends(CustomHTML, _super);
-        function CustomHTML() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        CustomHTML.prototype.render = function () {
-            var _a = this.props, Html = _a.Html, Head = _a.Head, Body = _a.Body, children = _a.children, renderMeta = _a.renderMeta;
-            return (React.createElement(Html, null,
-                React.createElement(Head, null,
-                    React.createElement("title", null, TITLE),
-                    React.createElement("meta", { charSet: "UTF-8" }),
-                    React.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1" }),
-                    React.createElement("link", { rel: "manifest", href: ROOT_URL + "/manifest.json" }),
-                    React.createElement("link", { rel: "shortcut icon", href: ROOT_URL + "/favicon.ico" }),
-                    renderMeta.styleTags),
-                React.createElement(Body, null, children)));
-        };
-        return CustomHTML;
-    }(React.Component)),
+    Document: function (_a) {
+        var Html = _a.Html, Head = _a.Head, Body = _a.Body, children = _a.children, renderMeta = _a.renderMeta;
+        return (React.createElement(Html, null,
+            React.createElement(Head, null,
+                React.createElement("title", null, TITLE),
+                React.createElement("meta", { charSet: "UTF-8" }),
+                React.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1" }),
+                React.createElement("link", { rel: "manifest", href: ROOT_URL + "/manifest.json" }),
+                React.createElement("link", { rel: "shortcut icon", href: ROOT_URL + "/favicon.ico" }),
+                renderMeta.styleTags),
+            React.createElement(Body, null, children)));
+    },
     webpack: function (config, _a) {
         var defaultLoaders = _a.defaultLoaders;
         // eslint-disable-next-line no-param-reassign

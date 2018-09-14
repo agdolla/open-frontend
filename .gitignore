@@ -24,4 +24,6 @@ yarn-error.log*
 
 # Built TS => JS files
 static.config.js
+static.config.js/
+./static.config.js
 /src/utils/*.js
