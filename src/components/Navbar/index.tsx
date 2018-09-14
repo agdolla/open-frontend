@@ -1,24 +1,32 @@
 import * as React from 'react';
-import { Link } from 'react-static';
-import { teams } from 'data';
+import { withRouter, RouteComponentProps } from 'react-static';
+import { Teams } from 'types';
+import { convertNameToSlug } from 'utils/helpers';
 
 import { List, Item, StyledLink } from './styles';
 
-const Navbar = () => (
+const ROOT = '/';
+
+const Navbar = ({ location }: RouteComponentProps<object>) => (
   <nav>
     <List>
       <Item>
-        <StyledLink to="/" active>
+        <StyledLink to="/" active={location.pathname === ROOT}>
           All Topics
         </StyledLink>
       </Item>
-      {Object.values(teams).map(team => (
-        <Item key={team}>
-          <StyledLink to={`/${team.toLowerCase()}`}>{team}</StyledLink>
-        </Item>
-      ))}
+      {Object.keys(Teams).map(team => {
+        const teamSlug = convertNameToSlug(team);
+        return (
+          <Item key={team}>
+            <StyledLink to={`/${teamSlug}`} active={location.pathname === `/${teamSlug}`}>
+              {team}
+            </StyledLink>
+          </Item>
+        )
+      })}
     </List>
   </nav>
 );
 
-export default Navbar;
+export default withRouter(Navbar);

@@ -45,3 +45,5 @@ export const mapNullToUndefined = (o: any) => {
 };
 
 export const noop = (..._: any[]): void => {};
+
+export const convertNameToSlug = name => name.toLowerCase().replace(' ', '-');

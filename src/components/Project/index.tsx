@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { Project as ProjectType } from 'types';
+import { Project as ProjectType } from 'utils/types';
 
 const Project = ({ isFeatured, language, team, title, description, img }: ProjectType) => (
   <div>
     {isFeatured && img && <img src={img} alt={title} />}
     <div className="content">
       <h6>
-        <span className="language">{language}</span>{' '}
+        <span className="language">{language.name}</span>{' '}
         <span className="spacer">&middot;</span>{' '}
         <span className="team">{team}</span>
       </h6>

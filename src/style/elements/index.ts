@@ -6,5 +6,5 @@ export const PageContainer = styled.div`
   ${maxContentWidth};
   margin: 0 auto;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
 `;

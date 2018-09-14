@@ -9,7 +9,7 @@ import Routes from 'react-static-routes';
 injectGlobals();
 
 const App = () => (
-  <Router>
+  <Router autoScrollToTop={false}>
     <div>
       <Routes />
     </div>

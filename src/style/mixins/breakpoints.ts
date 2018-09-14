@@ -1,4 +1,4 @@
-import { is } from 'utils';
+import { is } from 'utils/helpers';
 
 const toNum = (strOrNum: string | number): number => parseFloat(strOrNum as string);
 
@@ -56,23 +56,6 @@ function mergeBps(bps: Breakpoint[]): Breakpoint {
   return new Breakpoint(merged.start, merged.end);
 }
 
-/*
-import { mobile } from 'style/variables/breakpoints';
-import { above } from 'style/mixins'
-import styled from 'utils/styled';
-
-const Widget = styled.div`
-  ${above(mobile)} { // effectively tablet and above
-    width: 100%;
-  }
-`;
-
-const OtherWidget = styled.div`
-  ${above(414)} { // applies >= 415px
-    transform: rotate(1000deg);
-  }
-`
-*/
 // Returns a media query above the specified breakpoint
 // By defauly inclusive is false
 function above(
@@ -129,17 +112,6 @@ function between(
   return btw(bounds[0], bounds[1]);
 }
 
-/*
-import { mobile } from 'style/variables/breakpoints';
-import { at } from 'style/mixins'
-import styled from 'utils/styled';
-
-const Widget = styled.div`
-  ${at(mobile)} {
-    width: 100%;
-  }
-`;
-*/
 function at(...bps: Breakpoint[]): MediaQuery {
   let bp;
 
@@ -155,24 +127,6 @@ function at(...bps: Breakpoint[]): MediaQuery {
   return between(bp.start, bp.end);
 }
 
-/*
-import { tablet, desktop } from 'style/variables/breakpoints';
-import { not } from 'style/mixins'
-import styled from 'utils/styled';
-
-// This will apply the css to all widths except desktop
-const Widget = styled.div`
-  ${not(desktop)} {
-    width: 100%;
-  }
-`;
-
-const OtherWidget = styled.div`
-  ${not(above(tablet))} { // effectively < tablet or mobile
-    width: 100%;
-  }
-`;
-*/
 // Can either pass in a breakpoint or a media query to invert it
 function not(
   bp: Breakpoint | string | number,

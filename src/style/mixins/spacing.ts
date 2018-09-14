@@ -1,4 +1,4 @@
-import styled, { css } from 'react-emotion';
+import { css } from 'react-emotion';
 import { mobile, tablet, desktop } from 'style/variables/breakpoints';
 import { above, Breakpoint } from 'style/mixins/breakpoints';
 import spacing from 'style/variables/spacing';
