@@ -30,9 +30,9 @@ const defaultSpacing = 'initial';
 const matrix = {
   //  |Regular|RegularItalic|MediumItalic|SemiBold|SemiBoldItalic|Bold|BoldItalic|Bold (Caps)
   12: [0.19, 0.19, -0.10, -0.24, -0.24, -0.24, -0.24, 0.72],
-  14: [undefined, undefined, undefined, -0.16, -0.16, -0.36, -0.36, undefined],
+  14: [0.19, undefined, undefined, -0.16, -0.16, -0.36, -0.36, undefined],
   16: [-0.2, 0.2, undefined, -0.28, -0.28, -0.48, -0.48, undefined],
-  18: [undefined, undefined, -0.36, -0.36, -0.64, -0.64, -0.64, undefined],
+  18: [-0.38, undefined, -0.36, -0.36, -0.64, -0.64, -0.64, undefined],
 };
 
 const lineHeights = {

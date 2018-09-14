@@ -1,6 +1,7 @@
 import styled from 'react-emotion';
 import fonts from 'style/fonts';
 import { Colors } from 'style/variables/palette';
+import teimposText from 'style/fonts/tiemposText';
 import { rgba } from 'utils/color';
 
 export const Wrapper = styled.header`
@@ -19,7 +20,7 @@ export const Title = styled.h1`
 `;
 
 export const Description = styled.p`
-  ${fonts.s18.regular};
+  ${teimposText.s18.regular};
   color: ${Colors.BlueText};
   line-height: 1.56;
 `;

@@ -30,7 +30,7 @@ export const languages: Record<string, Language> = {
 export const projects: Project[] = [
   {
     title: 'Raster',
-    description: 'Testing testing 123',
+    description: 'Have you ever wondered what your images could look like if it were put through a virtual blender along with a heavy dose of rainbow glitter? Well now you won’t have to wonder—introducing Raster from Postmates.',
     language: languages.go,
     team: Teams.Infrastructure,
     img: '',

@@ -28,6 +28,8 @@ exports["default"] = {
     getSiteData: function () { return ({
         title: TITLE
     }); },
+    siteRoot: 'https://open.postmates.com',
+    stagingSiteRoot: 'https://stage-open.postmates.com',
     getRoutes: function () {
         var teamRoutes = route_1.buildTeamRoutes(data_1.projects);
         var routes = [

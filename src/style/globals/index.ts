@@ -3,11 +3,13 @@ import { injectGlobal } from 'react-emotion';
 import emotionNormalize from 'emotion-normalize';
 import { fonts, palette } from 'style/variables';
 import fontMatrix from 'style/fonts';
-import fontFace from 'style/fonts/fontFace/postmatesStd';
+import standardFontFace from 'style/fonts/fontFace/postmatesStd';
+import tiemposFontFace from 'style/fonts/fontFace/tiemposText';
 
 const globalStyles = css`
   ${emotionNormalize};
-  ${fontFace};
+  ${standardFontFace};
+  ${tiemposFontFace};
   *, *::after, *::before {
     box-sizing: border-box;
   }
@@ -34,7 +36,7 @@ const globalStyles = css`
     font-weight, size, spacing come from matrix defined in style/fonts,
     however, emotion does not allow composing with nested selectors */
     ${fontMatrix.s16.regular};
-    background-color: ${palette.Colors.LightBlue};
+    background-color: ${palette.Colors.BlueBorder};
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { withRouteData } from 'react-static';
 import Header from 'components/Header';
-import Project from 'components/Project';
+import ProjectList from 'components/ProjectList';
 import { Project as ProjectType } from 'utils/types';
 
 import { PageContainer } from 'style/elements';
@@ -13,10 +13,8 @@ interface Props {
 const ProjectPage = ({ projects }: Props) => (
   <PageContainer>
     <Header />
-    <div>
-      {projects.map(p => <Project key={p.title}  {...p} />)}
-    </div>
+    <ProjectList projects={projects} />
   </PageContainer>
 );
 
-export default withRouteData(ProjectPage)
+export default withRouteData(ProjectPage);

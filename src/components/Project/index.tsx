@@ -1,19 +1,30 @@
 import * as React from 'react';
 import { Project as ProjectType } from 'utils/types';
 
+import {
+  Wrapper,
+  Content,
+  Details,
+  Language,
+  Team,
+  Spacer,
+  Title,
+  Description,
+} from './styles';
+
 const Project = ({ isFeatured, language, team, title, description, img }: ProjectType) => (
-  <div>
+  <Wrapper>
     {isFeatured && img && <img src={img} alt={title} />}
-    <div className="content">
-      <h6>
-        <span className="language">{language.name}</span>{' '}
-        <span className="spacer">&middot;</span>{' '}
-        <span className="team">{team}</span>
-      </h6>
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  </div>
+    <Content>
+      <Details>
+        <Language color={language.color}>{language.name}</Language>{' '}
+        <Spacer>&middot;</Spacer>{' '}
+        <Team>{team}</Team>
+      </Details>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+    </Content>
+  </Wrapper>
 );
 
 export default Project;
