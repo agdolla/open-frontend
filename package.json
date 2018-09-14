@@ -15,7 +15,7 @@
   },
   "scripts": {
     "prepush": "./scripts/prepush.sh",
-    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx --max-warnings 0",
+    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx --quiet",
     "lint": "yarn lint:js src",
     "config:build": "tsc static.config.tsx --jsx react",
     "start": "yarn config:build && react-static start",
