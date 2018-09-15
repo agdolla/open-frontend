@@ -23,7 +23,8 @@
     "build": "yarn config:build && react-static build",
     "serve": "serve dist -p 3000",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "deploy:stage": "yarn stage && netlify deploy"
   },
   "dependencies": {
     "axios": "^0.16.2",

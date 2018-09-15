@@ -27,3 +27,4 @@ static.config.js
 static.config.js/
 ./static.config.js
 /src/utils/*.js
+data.js

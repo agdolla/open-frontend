@@ -2,8 +2,8 @@ import * as React from 'react';
 import * as path from 'path';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { renderStylesToString } from 'emotion-server';
-import { projects } from './src/utils/data';
 import { buildTeamRoutes } from './src/utils/route';
+import { projects } from './data';
 
 const typescriptWebpackPaths = require('./webpack.config.js');
 
@@ -25,14 +25,15 @@ export default {
   getSiteData: () => ({
     title: TITLE,
   }),
-  siteRoot: 'https://open.postmates.com',
-  stagingSiteRoot: 'https://stage-open.postmates.com',
+  // Note: Add these back once we have domain set up
+  // siteRoot: 'https://open.postmates.com',
+  stagingSiteRoot: 'https://awesome-lamarr-c46055.netlify.com',
   getRoutes: () => {
     const teamRoutes = buildTeamRoutes(projects);
     const routes = [
       {
         path: '/',
-        component: 'src/pages/ProjectPage',
+        component: 'src/pages/ProjectPage.tsx',
         getData: () => ({
           projects,
         }),
@@ -43,24 +44,25 @@ export default {
     console.log('Routes = ', routes);
     return routes;
   },
-  renderToHtml: (render, Comp) => renderStylesToString(render(<Comp />)),
-  Document: ({ Html, Head, Body, children, renderMeta }: DocumentProps) => (
-    <Html>
-      <Head>
-        <title>{TITLE}</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="manifest" href={`${ROOT_URL}/manifest.json`} />
-        <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
-        {/* Add social meta tags, sentry */}
+  // NOTE: Figure out why this isn't working in the react-static version
+  // renderToHtml: (render, Comp) => renderStylesToString(render(<Comp />)),
+  // Document: ({ Html, Head, Body, children, renderMeta }: DocumentProps) => (
+  //   <Html>
+  //     <Head>
+  //       <title>{TITLE}</title>
+  //       <meta charSet="UTF-8" />
+  //       <meta name="viewport" content="width=device-width, initial-scale=1" />
+  //       <link rel="manifest" href={`${ROOT_URL}/manifest.json`} />
+  //       <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
+  //       {/* Add social meta tags, sentry */}
 
-        {renderMeta.styleTags}
-      </Head>
-      <Body>
-        {children}
-      </Body>
-    </Html>
-  ),
+  //       {renderMeta.styleTags}
+  //     </Head>
+  //     <Body>
+  //       {children}
+  //     </Body>
+  //   </Html>
+  // ),
   webpack: (config, { defaultLoaders }) => {
     // eslint-disable-next-line no-param-reassign
     config.resolve.extensions = [

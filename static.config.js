@@ -1,11 +1,8 @@
 "use strict";
 exports.__esModule = true;
-var React = require("react");
 var path = require("path");
-// eslint-disable-next-line import/no-extraneous-dependencies
-var emotion_server_1 = require("emotion-server");
-var data_1 = require("./src/utils/data");
 var route_1 = require("./src/utils/route");
+var data_1 = require("./data");
 var typescriptWebpackPaths = require('./webpack.config.js');
 var TITLE = 'Postmates Open Source';
 var ROOT_URL = 'http://localhost:3000'; // set this by environment
@@ -16,14 +13,15 @@ exports["default"] = {
     getSiteData: function () { return ({
         title: TITLE
     }); },
-    siteRoot: 'https://open.postmates.com',
-    stagingSiteRoot: 'https://stage-open.postmates.com',
+    // Note: Add these back once we have domain set up
+    // siteRoot: 'https://open.postmates.com',
+    stagingSiteRoot: 'https://awesome-lamarr-c46055.netlify.com',
     getRoutes: function () {
         var teamRoutes = route_1.buildTeamRoutes(data_1.projects);
         var routes = [
             {
                 path: '/',
-                component: 'src/pages/ProjectPage',
+                component: 'src/pages/ProjectPage.tsx',
                 getData: function () { return ({
                     projects: data_1.projects
                 }); }
@@ -33,19 +31,24 @@ exports["default"] = {
         console.log('Routes = ', routes);
         return routes;
     },
-    renderToHtml: function (render, Comp) { return emotion_server_1.renderStylesToString(render(React.createElement(Comp, null))); },
-    Document: function (_a) {
-        var Html = _a.Html, Head = _a.Head, Body = _a.Body, children = _a.children, renderMeta = _a.renderMeta;
-        return (React.createElement(Html, null,
-            React.createElement(Head, null,
-                React.createElement("title", null, TITLE),
-                React.createElement("meta", { charSet: "UTF-8" }),
-                React.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1" }),
-                React.createElement("link", { rel: "manifest", href: ROOT_URL + "/manifest.json" }),
-                React.createElement("link", { rel: "shortcut icon", href: ROOT_URL + "/favicon.ico" }),
-                renderMeta.styleTags),
-            React.createElement(Body, null, children)));
-    },
+    // NOTE: Figure out why this isn't working in the react-static version
+    // renderToHtml: (render, Comp) => renderStylesToString(render(<Comp />)),
+    // Document: ({ Html, Head, Body, children, renderMeta }: DocumentProps) => (
+    //   <Html>
+    //     <Head>
+    //       <title>{TITLE}</title>
+    //       <meta charSet="UTF-8" />
+    //       <meta name="viewport" content="width=device-width, initial-scale=1" />
+    //       <link rel="manifest" href={`${ROOT_URL}/manifest.json`} />
+    //       <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
+    //       {/* Add social meta tags, sentry */}
+    //       {renderMeta.styleTags}
+    //     </Head>
+    //     <Body>
+    //       {children}
+    //     </Body>
+    //   </Html>
+    // ),
     webpack: function (config, _a) {
         var defaultLoaders = _a.defaultLoaders;
         // eslint-disable-next-line no-param-reassign

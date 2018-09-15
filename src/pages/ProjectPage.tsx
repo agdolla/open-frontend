@@ -10,7 +10,7 @@ interface Props {
   projects: ProjectType[];
 }
 
-const ProjectPage = ({ projects }: Props) => (
+const ProjectPage = ({ projects = [] }: Props) => (
   <PageContainer>
     <Header />
     <ProjectList projects={projects} />

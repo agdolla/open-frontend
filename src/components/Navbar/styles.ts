@@ -18,14 +18,14 @@ export const Item = styled.li`
   margin-right: 32px;
 `;
 
-export const StyledLink = styled(Link)<{ active?: boolean }>`
+export const StyledLink = styled(Link)<{ activeRoute?: boolean }>`
   ${fonts.s14.regular};
   display: block;
   padding: 24px 0;
-  border-bottom: 1px solid ${({ active }) =>
-    (active ? Colors.BlueBright : rgba(Colors.BlueBright, 0))};
-  color: ${({ active }) => (active ? Colors.BlueBright : Colors.BlueMedium)};
-  ${({ active }) => active && 'font-weight: bold;'}
+  border-bottom: 1px solid ${({ activeRoute }) =>
+    (activeRoute ? Colors.BlueBright : rgba(Colors.BlueBright, 0))};
+  color: ${({ activeRoute }) => (activeRoute ? Colors.BlueBright : Colors.BlueMedium)};
+  ${({ activeRoute }) => activeRoute && 'font-weight: bold;'}
   transition: color 0.15s ease, border 0.15s ease;
 
   &:hover {

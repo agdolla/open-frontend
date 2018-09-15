@@ -11,7 +11,7 @@ const Navbar = ({ location }: RouteComponentProps<object>) => (
   <nav>
     <List>
       <Item>
-        <StyledLink to="/" active={location.pathname === ROOT}>
+        <StyledLink to="/" activeRoute={location.pathname === ROOT}>
           All Topics
         </StyledLink>
       </Item>
@@ -19,7 +19,7 @@ const Navbar = ({ location }: RouteComponentProps<object>) => (
         const teamSlug = convertNameToSlug(team);
         return (
           <Item key={team}>
-            <StyledLink to={`/${teamSlug}`} active={location.pathname === `/${teamSlug}`}>
+            <StyledLink to={`/${teamSlug}`} activeRoute={location.pathname === `/${teamSlug}`}>
               {team}
             </StyledLink>
           </Item>
