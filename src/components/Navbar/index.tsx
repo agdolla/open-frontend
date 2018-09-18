@@ -3,16 +3,16 @@ import { withRouter, RouteComponentProps } from 'react-static';
 import { Teams } from 'utils/types';
 import { convertNameToSlug } from 'utils/helpers';
 
-import { List, Item, StyledLink } from './styles';
+import { Nav, List, Item, StyledLink } from './styles';
 
 const ROOT = '/';
 
 const Navbar = ({ location }: RouteComponentProps<object>) => (
-  <nav>
+  <Nav>
     <List>
       <Item>
         <StyledLink to="/" activeRoute={location.pathname === ROOT}>
-          All Topics
+          All Projects
         </StyledLink>
       </Item>
       {Object.keys(Teams).map((team) => {
@@ -26,7 +26,7 @@ const Navbar = ({ location }: RouteComponentProps<object>) => (
         );
       })}
     </List>
-  </nav>
+  </Nav>
 );
 
 export default withRouter(Navbar);

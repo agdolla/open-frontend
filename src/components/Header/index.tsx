@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Navbar from 'components/Navbar';
 
-import { Wrapper, Content, Title, Description, TextWrapper } from './styles';
+import { Wrapper, Content, Title, Description, TextWrapper, ImageWrapper } from './styles';
 
 const Header = () => (
   <Wrapper>
@@ -15,11 +14,10 @@ const Header = () => (
           improvement...
         </Description>
       </TextWrapper>
-      <div>
+      <ImageWrapper>
         <img src="http://placehold.it/300x300" alt="tmp" width="300" height="300" />
-      </div>
+      </ImageWrapper>
     </Content>
-    <Navbar />
   </Wrapper>
 );
 

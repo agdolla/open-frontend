@@ -2,15 +2,22 @@ import styled from 'react-emotion';
 import fonts from 'style/fonts';
 import { Colors } from 'style/variables/palette';
 import teimposText from 'style/fonts/tiemposText';
-import { rgba } from 'utils/color';
+import { below } from 'style/mixins/breakpoints';
+import { tablet } from 'style/variables/breakpoints';
+import { gutter, maxContentWidth } from 'style/mixins/spacing';
 
-export const Wrapper = styled.header`
-  border-bottom: 1px solid ${rgba(Colors.BlueMedium, 0.15)};
+export const Wrapper = styled.div`
+  ${gutter};
+  ${maxContentWidth};
 `;
 
 export const Content = styled.div`
   display: flex;
   padding-bottom: 20px;
+
+  ${below(tablet)} {
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.h1`
@@ -28,4 +35,16 @@ export const Description = styled.p`
 
 export const TextWrapper = styled.div`
   padding-right: 80px;
+
+  ${below(tablet)} {
+    padding-right: 0;
+  }
+`;
+
+export const ImageWrapper = styled.div`
+  ${below(tablet)} {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
 `;

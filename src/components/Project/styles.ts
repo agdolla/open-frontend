@@ -2,6 +2,8 @@ import styled from 'react-emotion';
 import fonts from 'style/fonts';
 import tiemposText from 'style/fonts/tiemposText';
 import { Colors } from 'style/variables/palette';
+import { below } from 'style/mixins/breakpoints';
+import { tablet } from 'style/variables/breakpoints';
 
 export const ExternalLink = styled.a<{ isFeatured?: boolean }>`
   display: flex;
@@ -11,6 +13,10 @@ export const ExternalLink = styled.a<{ isFeatured?: boolean }>`
 
   &:hover {
     box-shadow: 0 10px 24px 0 rgba(63, 86, 181, 0.2);
+  }
+
+  ${below(tablet)} {
+    margin-bottom: 8px;
   }
 `;
 
@@ -23,6 +29,10 @@ export const Image = styled.img`
   width: 300px;
   height: 100%;
   margin-top: -8px;
+
+  ${below(tablet)} {
+    display: none;
+  }
 `;
 
 export const Content = styled.div`

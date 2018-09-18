@@ -1,10 +1,13 @@
 import styled from 'react-emotion';
-import { gutter, maxContentWidth } from 'style/mixins/spacing';
+import { below } from 'style/mixins/breakpoints';
+import { tablet } from 'style/variables/breakpoints';
 
 export const PageContainer = styled.div`
-  ${gutter};
-  ${maxContentWidth};
   margin: 0 auto;
   padding-top: 120px;
   padding-bottom: 300px;
+
+  ${below(tablet)} {
+    padding-top: 32px;
+  }
 `;
