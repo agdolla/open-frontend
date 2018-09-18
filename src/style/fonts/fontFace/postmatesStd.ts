@@ -17,35 +17,35 @@ import postmatesStdRegularTtf from '../families/PostmatesStd/postmates_std_regul
 
 export default css`
   @font-face {
-  font-family: 'PostmatesStd';
-  src: url(${postmatesStdRegularEot});
-  src: url('${postmatesStdRegularEot}#iefix') format('embedded-opentype'),
-  url(${postmatesStdRegularWoffDos}) format('woff2'),
-  url(${postmatesStdRegularWoff}) format('woff'),
-  url(${postmatesStdRegularTtf}) format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'PostmatesStd';
+    src: url(${postmatesStdRegularEot});
+    src: url('${postmatesStdRegularEot}#iefix') format('embedded-opentype'),
+    url(${postmatesStdRegularWoffDos}) format('woff2'),
+    url(${postmatesStdRegularWoff}) format('woff'),
+    url(${postmatesStdRegularTtf}) format('truetype');
+    font-weight: 400;
+    font-style: normal;
   }
 
   @font-face {
-  font-family: 'PostmatesStd';
-  src: url(${postmatesStdMediumEot});
-  src: url('${postmatesStdMediumEot}#iefix') format('embedded-opentype'),
-  url(${postmatesStdMediumWoffDos}) format('woff2'),
-  url(${postmatesStdMediumWoff}) format('woff'),
-  url(${postmatesStdMediumTtf}) format('truetype');
-  font-weight: 500;
-  font-style: normal;
+    font-family: 'PostmatesStd';
+    src: url(${postmatesStdMediumEot});
+    src: url('${postmatesStdMediumEot}#iefix') format('embedded-opentype'),
+    url(${postmatesStdMediumWoffDos}) format('woff2'),
+    url(${postmatesStdMediumWoff}) format('woff'),
+    url(${postmatesStdMediumTtf}) format('truetype');
+    font-weight: 500;
+    font-style: normal;
   }
 
   @font-face {
-  font-family: 'PostmatesStd';
-  src: url(${postmatesStdBoldEot});
-  src: url('${postmatesStdBoldEot}#iefix') format('embedded-opentype'),
-  url(${postmatesStdBoldWoffDos}) format('woff2'),
-  url(${postmatesStdBoldWoff}) format('woff'),
-  url(${postmatesStdBoldTtf}) format('truetype');
-  font-weight: 600;
-  font-style: normal;
+    font-family: 'PostmatesStd';
+    src: url(${postmatesStdBoldEot});
+    src: url('${postmatesStdBoldEot}#iefix') format('embedded-opentype'),
+    url(${postmatesStdBoldWoffDos}) format('woff2'),
+    url(${postmatesStdBoldWoff}) format('woff'),
+    url(${postmatesStdBoldTtf}) format('truetype');
+    font-weight: 600;
+    font-style: normal;
   }
 `;
