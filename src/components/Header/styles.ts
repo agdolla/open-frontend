@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 
   ${below(tablet)} {
     flex-direction: column;
@@ -42,6 +42,9 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
+  width: 400px;
+  position: relative;
+
   ${below(tablet)} {
     text-align: center;
     margin-top: 28px;
