@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Animation from 'components/Animation';
 
 import { Wrapper, Content, Title, Description, TextWrapper, ImageWrapper } from './styles';
 
@@ -15,7 +16,8 @@ const Header = () => (
         </Description>
       </TextWrapper>
       <ImageWrapper>
-        <img src="http://placehold.it/300x300" alt="tmp" width="300" height="300" />
+        <Animation time={60} />
+        <Animation time={20} />
       </ImageWrapper>
     </Content>
   </Wrapper>
