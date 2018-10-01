@@ -34,7 +34,7 @@ export const Description = styled.p`
 `;
 
 export const TextWrapper = styled.div`
-  padding-right: 80px;
+  padding-right: 12px;
 
   ${below(tablet)} {
     padding-right: 0;
@@ -42,12 +42,15 @@ export const TextWrapper = styled.div`
 `;
 
 export const ImageWrapper = styled.div`
-  width: 400px;
+  width: 600px;
   position: relative;
 
   ${below(tablet)} {
     text-align: center;
     margin-top: 28px;
     margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
   }
 `;

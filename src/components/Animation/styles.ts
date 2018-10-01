@@ -1,10 +1,10 @@
 import styled, { keyframes } from 'react-emotion';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<{ marginTop: number; }>`
   perspective: 1000px;
   perspective-origin: 50% 50%;
-  position: absolute;
   padding-top: 80px;
+  margin-top: ${({ marginTop }) => marginTop}px
 `;
 
 const rotate = keyframes`

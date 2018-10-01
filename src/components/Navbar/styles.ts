@@ -43,7 +43,8 @@ export const Item = styled.li`
 export const StyledLink = styled(Link)<{ activeRoute?: boolean }>`
   ${fonts.s14.regular};
   display: block;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid ${({ activeRoute }) =>
     (activeRoute ? Colors.BlueBright : rgba(Colors.BlueBright, 0))};
   color: ${({ activeRoute }) => (activeRoute ? Colors.BlueBright : Colors.BlueMedium)};
