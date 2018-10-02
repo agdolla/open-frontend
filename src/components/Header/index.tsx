@@ -10,9 +10,8 @@ const Header = () => (
         <img src="/images/brandmark.svg" alt="postmates" />
         <Title>Postmates <br /> Open Source</Title>
         <Description>
-          The monkey-rope is found in all whalers; but it was only in the
-          Pequod that the monkey and his holder were ever tied together. This
-          improvement...
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua....
         </Description>
       </TextWrapper>
       <ImageWrapper>
