@@ -51,6 +51,6 @@ export const ImageWrapper = styled.div`
     margin-bottom: 12px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 100%;
   }
 `;
