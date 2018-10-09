@@ -13,6 +13,14 @@ interface Props {
 
 const ProjectPage = ({ projects = [] }: Props) => (
   <PageContainer>
+    <script dangerouslySetInnerHtml={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-27673166-11');
+      `,
+    }} />
     <Header />
     <Navbar />
     <ProjectList projects={projects} />
