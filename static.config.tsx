@@ -41,28 +41,33 @@ export default {
       ...teamRoutes,
     ];
     // eslint-disable-next-line no-console
-    console.log('Routes = ', routes);
+    console.log('Routes = ', routes.map(r => r.path));
     return routes;
   },
-  // NOTE: Figure out why this isn't working in the react-static version
-  // renderToHtml: (render, Comp) => renderStylesToString(render(<Comp />)),
-  // Document: ({ Html, Head, Body, children, renderMeta }: DocumentProps) => (
-  //   <Html>
-  //     <Head>
-  //       <title>{TITLE}</title>
-  //       <meta charSet="UTF-8" />
-  //       <meta name="viewport" content="width=device-width, initial-scale=1" />
-  //       <link rel="manifest" href={`${ROOT_URL}/manifest.json`} />
-  //       <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
-  //       {/* Add social meta tags, sentry */}
+  Document: ({ Html, Head, Body, children, renderMeta }: DocumentProps) => (
+    <Html>
+      <Head>
+        <title>{TITLE}</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="manifest" href={`${ROOT_URL}/manifest.json`} />
+        <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27673166-11"></script>
+        {/* Add social meta tags, sentry */}
+        {/* <script dangerouslySetInnerHtml={{
+          __html: `  window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-27673166-11');`,
+        }} /> */}
 
-  //       {renderMeta.styleTags}
-  //     </Head>
-  //     <Body>
-  //       {children}
-  //     </Body>
-  //   </Html>
-  // ),
+        {renderMeta.styleTags}
+      </Head>
+      <Body>
+        {children}
+      </Body>
+    </Html>
+  ),
   webpack: (config, { defaultLoaders }) => {
     // eslint-disable-next-line no-param-reassign
     config.resolve.extensions = [

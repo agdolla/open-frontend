@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+var React = require("react");
 var path = require("path");
 var route_1 = require("./src/utils/route");
 var data_1 = require("./data");
@@ -28,27 +29,22 @@ exports["default"] = {
             }
         ].concat(teamRoutes);
         // eslint-disable-next-line no-console
-        console.log('Routes = ', routes);
+        console.log('Routes = ', routes.map(function (r) { return r.path; }));
         return routes;
     },
-    // NOTE: Figure out why this isn't working in the react-static version
-    // renderToHtml: (render, Comp) => renderStylesToString(render(<Comp />)),
-    // Document: ({ Html, Head, Body, children, renderMeta }: DocumentProps) => (
-    //   <Html>
-    //     <Head>
-    //       <title>{TITLE}</title>
-    //       <meta charSet="UTF-8" />
-    //       <meta name="viewport" content="width=device-width, initial-scale=1" />
-    //       <link rel="manifest" href={`${ROOT_URL}/manifest.json`} />
-    //       <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
-    //       {/* Add social meta tags, sentry */}
-    //       {renderMeta.styleTags}
-    //     </Head>
-    //     <Body>
-    //       {children}
-    //     </Body>
-    //   </Html>
-    // ),
+    Document: function (_a) {
+        var Html = _a.Html, Head = _a.Head, Body = _a.Body, children = _a.children, renderMeta = _a.renderMeta;
+        return (React.createElement(Html, null,
+            React.createElement(Head, null,
+                React.createElement("title", null, TITLE),
+                React.createElement("meta", { charSet: "UTF-8" }),
+                React.createElement("meta", { name: "viewport", content: "width=device-width, initial-scale=1" }),
+                React.createElement("link", { rel: "manifest", href: ROOT_URL + "/manifest.json" }),
+                React.createElement("link", { rel: "shortcut icon", href: ROOT_URL + "/favicon.ico" }),
+                React.createElement("script", { async: true, src: "https://www.googletagmanager.com/gtag/js?id=UA-27673166-11" }),
+                renderMeta.styleTags),
+            React.createElement(Body, null, children)));
+    },
     webpack: function (config, _a) {
         var defaultLoaders = _a.defaultLoaders;
         // eslint-disable-next-line no-param-reassign

@@ -35,9 +35,8 @@
     "react-dom": "^16.4.2",
     "react-emotion": "^9.2.4",
     "react-hot-loader": "^4.0.0-beta.21",
-    "react-static": "^6.0.0-beta.20",
-    "react-static-plugin-emotion": "^1.0.0",
-    "react-static-routes": "^1.0.0"
+    "react-static": "next",
+    "react-static-plugin-emotion": "^1.0.6"
   },
   "devDependencies": {
     "@postmates/eslint-config": "^1.0.0",
