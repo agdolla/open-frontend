@@ -17,7 +17,7 @@
     "prepush": "./scripts/prepush.sh",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx --quiet",
     "lint": "yarn lint:js src",
-    "test": "cross-env NODE_ENV=production jest",
+    "test": "jest",
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "cross-env": "^5.2.0",
     "emotion": "^9.2.4",
     "emotion-normalize": "^7.0.1",
     "enzyme": "^3.7.0",

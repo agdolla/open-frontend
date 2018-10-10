@@ -1,33 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Project renders correctly 1`] = `
-<Styled(a)
+<ExternalLink
   href="https://github.com"
 >
-  <Styled(div)>
-    <Styled(div)>
-      <Styled(div)>
-        <Styled(span)
+  <Wrapper>
+    <Content>
+      <Details>
+        <Language
           color="#038FEF"
         >
           MySQL
-        </Styled(span)>
+        </Language>
          
-        <Styled(span)>
+        <Spacer>
           ·
-        </Styled(span)>
+        </Spacer>
          
-        <Styled(span)>
+        <Team>
           Infrastructure
-        </Styled(span)>
-      </Styled(div)>
-      <Styled(h3)>
+        </Team>
+      </Details>
+      <Title>
         Entity Store
-      </Styled(h3)>
-      <Styled(p)>
+      </Title>
+      <Description>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-      </Styled(p)>
-    </Styled(div)>
-  </Styled(div)>
-</Styled(a)>
+      </Description>
+    </Content>
+  </Wrapper>
+</ExternalLink>
 `;
