@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectList renders correctly 1`] = `
+<List>
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Entity Store"
+    language={
+      Object {
+        "color": "#038FEF",
+        "name": "MySQL",
+      }
+    }
+    team="Infrastructure"
+    title="Entity Store"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Priority Mail"
+    language={
+      Object {
+        "color": "#EFD427",
+        "name": "JavaScript",
+      }
+    }
+    team="Frontend"
+    title="Priority Mail"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="iOS Project"
+    language={
+      Object {
+        "color": "#FB8B39",
+        "name": "Swift",
+      }
+    }
+    team="iOS"
+    title="iOS Project"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Android Project"
+    language={
+      Object {
+        "color": "#A5C845",
+        "name": "Java",
+      }
+    }
+    team="Android"
+    title="Android Project"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Data Project"
+    language={
+      Object {
+        "color": "#3A79AC",
+        "name": "Python",
+      }
+    }
+    team="Data"
+    title="Data Project"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Frontend Project"
+    language={
+      Object {
+        "color": "#EFD427",
+        "name": "JavaScript",
+      }
+    }
+    team="Frontend"
+    title="Frontend Project"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Infra Project"
+    language={
+      Object {
+        "color": "#814C21",
+        "name": "Rust",
+      }
+    }
+    team="Infrastructure"
+    title="Infra Project"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Knapsack"
+    language={
+      Object {
+        "color": "#E72619",
+        "name": "Elixir",
+      }
+    }
+    team="Infrastructure"
+    title="Knapsack"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Android Project 2"
+    language={
+      Object {
+        "color": "#A5C845",
+        "name": "Java",
+      }
+    }
+    team="Android"
+    title="Android Project 2"
+  />
+  <Project
+    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+    github="https://github.com"
+    key="Data Project 2"
+    language={
+      Object {
+        "color": "#3A79AC",
+        "name": "Python",
+      }
+    }
+    team="Data"
+    title="Data Project 2"
+  />
+</List>
+`;

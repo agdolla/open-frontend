@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project renders correctly 1`] = `
+<ExternalLink
+  href="https://github.com"
+>
+  <Wrapper>
+    <Content>
+      <Details>
+        <Language
+          color="#038FEF"
+        >
+          MySQL
+        </Language>
+         
+        <Spacer>
+          ·
+        </Spacer>
+         
+        <Team>
+          Infrastructure
+        </Team>
+      </Details>
+      <Title>
+        Entity Store
+      </Title>
+      <Description>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+      </Description>
+    </Content>
+  </Wrapper>
+</ExternalLink>
+`;

@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectPage renders correctly 1`] = `
+<withRouter(RouteData)
+  component={[Function]}
+  projects={
+    Array [
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#038FEF",
+          "name": "MySQL",
+        },
+        "team": "Infrastructure",
+        "title": "Entity Store",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#EFD427",
+          "name": "JavaScript",
+        },
+        "team": "Frontend",
+        "title": "Priority Mail",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#FB8B39",
+          "name": "Swift",
+        },
+        "team": "iOS",
+        "title": "iOS Project",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#A5C845",
+          "name": "Java",
+        },
+        "team": "Android",
+        "title": "Android Project",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#3A79AC",
+          "name": "Python",
+        },
+        "team": "Data",
+        "title": "Data Project",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#EFD427",
+          "name": "JavaScript",
+        },
+        "team": "Frontend",
+        "title": "Frontend Project",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#814C21",
+          "name": "Rust",
+        },
+        "team": "Infrastructure",
+        "title": "Infra Project",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#E72619",
+          "name": "Elixir",
+        },
+        "team": "Infrastructure",
+        "title": "Knapsack",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#A5C845",
+          "name": "Java",
+        },
+        "team": "Android",
+        "title": "Android Project 2",
+      },
+      Object {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "github": "https://github.com",
+        "language": Object {
+          "color": "#3A79AC",
+          "name": "Python",
+        },
+        "team": "Data",
+        "title": "Data Project 2",
+      },
+    ]
+  }
+/>
+`;

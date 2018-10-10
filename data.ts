@@ -37,15 +37,6 @@ export const languages: Record<string, Language> = {
 
 export const projects: Project[] = [
   {
-    title: 'Raster',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
-    language: languages.go,
-    team: Teams.Infrastructure,
-    img: '/images/tmp.png',
-    github: 'https://github.com',
-    isFeatured: true,
-  },
-  {
     title: 'Entity Store',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.',
     language: languages.mySql,
