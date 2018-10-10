@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as path from 'path';
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { renderStylesToString } from 'emotion-server';
+// eslint-disable-next-line import/no-extraneous-dependencies 
 import { buildTeamRoutes } from './src/utils/route';
 import { projects } from './data';
 
@@ -46,8 +45,7 @@ export default {
         <link rel="shortcut icon" href={`${ROOT_URL}/favicon.ico`} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27673166-11"></script>
         {/* Add social meta tags, sentry */}
-        {/* @ts-ignore */}
-        <script dangerouslySetInnerHtml={{
+        <script dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

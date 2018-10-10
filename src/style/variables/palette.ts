@@ -1,5 +1,3 @@
-import { isDark, rgba } from 'utils/color';
-
 export type Color = string;
 
 export enum Colors {
@@ -29,49 +27,6 @@ export enum Colors {
   BlueLight = '#8C9AD6',
 }
 
-function readableColor(bgColor: Color) {
-  return isDark(bgColor) ? Colors.White : Colors.Black;
-}
-
-function getForeground(bgColor: Color) {
-  const color = readableColor(bgColor);
-  if (color === Colors.White) {
-    return color;
-  }
-  return Colors.Text;
-}
-
-function getPlaceholder(bgColor: Color) {
-  return {
-    [Colors.White]: rgba(Colors.White, 0.5),
-    [Colors.Black]: rgba(Colors.Text, 0.5),
-  }[readableColor(bgColor)];
-}
-
-function getCursor(bgColor: Color) {
-  return {
-    [Colors.White]: Colors.Cta,
-    [Colors.Black]: Colors.Black,
-  }[readableColor(bgColor)];
-}
-
-function getSecondaryText(bgColor: Color) {
-  return {
-    [Colors.White]: Colors.White,
-    [Colors.Black]: Colors.LightText,
-  }[readableColor(bgColor)];
-}
-
-const generateTheme = (bgColor: Color = Colors.White): Dictionary<Color> => ({
-  background: bgColor,
-  foreground: getForeground(bgColor),
-  placeholder: getPlaceholder(bgColor),
-  cursor: getCursor(bgColor),
-  secondaryText: getSecondaryText(bgColor),
-  ...Colors,
-});
-
 export default {
-  generateTheme,
   Colors,
 };

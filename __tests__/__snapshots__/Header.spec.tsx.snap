@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<Styled(div)>
+  <Styled(div)>
+    <Styled(div)>
+      <img
+        alt="postmates"
+        src="/images/brandmark.svg"
+      />
+      <Styled(h1)>
+        Postmates 
+        <br />
+         Open Source
+      </Styled(h1)>
+      <Styled(p)>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua....
+      </Styled(p)>
+    </Styled(div)>
+    <Styled(div)>
+      <Animation
+        time={60}
+      />
+      <Animation
+        marginTop={-280}
+        time={20}
+      />
+    </Styled(div)>
+  </Styled(div)>
+</Styled(div)>
+`;
