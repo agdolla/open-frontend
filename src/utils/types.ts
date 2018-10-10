@@ -1,3 +1,8 @@
+export enum Meta {
+  Title = 'Postmates Open Source',
+  Description = 'Open source software at Postmates.',
+}
+
 export interface Language {
   name: string;
   color: string;
