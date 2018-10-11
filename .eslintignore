@@ -1,4 +1,0 @@
-dist/*
-build/*
-static.config.js
-src/utils/*.js
