@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
-  "homepage": "https://open.postmates.com/",
+  "homepage": "http://postmates.github.io/open-frontend",
   "repository": {
     "type": "git",
     "url": "https://github.com/postmates/open-frontend"
@@ -24,7 +24,7 @@
     "build": "yarn config:build && react-static build",
     "serve": "serve dist -p 3000",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "deploy:stage": "yarn stage && netlify deploy"
   },
   "dependencies": {
@@ -33,6 +33,7 @@
     "emotion-normalize": "^7.0.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
+    "gh-pages": "^2.0.1",
     "lodash": "^4.17.10",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",

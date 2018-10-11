@@ -2,15 +2,15 @@
 
 exports[`Project renders correctly 1`] = `
 <ExternalLink
-  href="https://github.com"
+  href="https://github.com/postmates/centersliderview-android"
 >
   <Wrapper>
     <Content>
       <Details>
         <Language
-          color="#038FEF"
+          color="#A5C845"
         >
-          MySQL
+          Java
         </Language>
          
         <Spacer>
@@ -18,14 +18,14 @@ exports[`Project renders correctly 1`] = `
         </Spacer>
          
         <Team>
-          Infrastructure
+          Android
         </Team>
       </Details>
       <Title>
-        Entity Store
+        Center Slider View
       </Title>
       <Description>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+        Recentering slider/seek bar widget for android.
       </Description>
     </Content>
   </Wrapper>
