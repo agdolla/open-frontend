@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectPage renders correctly 1`] = `
+<withRouter(RouteData)
+  component={[Function]}
+  projects={
+    Array [
+      Object {
+        "description": "Recentering slider/seek bar widget for android.",
+        "github": "https://github.com/postmates/centersliderview-android",
+        "language": Object {
+          "color": "#A5C845",
+          "name": "Java",
+        },
+        "team": "Android",
+        "title": "Center Slider View",
+      },
+      Object {
+        "description": "Telemetry aggregation and shipping, last up the ladder.",
+        "github": "https://github.com/postmates/cernan",
+        "language": Object {
+          "color": "#814C21",
+          "name": "Rust",
+        },
+        "team": "Infrastructure",
+        "title": "Cernan",
+      },
+      Object {
+        "description": "Utilities for Lightning Components in Visualforce",
+        "github": "https://github.com/postmates/salesforce-ersa",
+        "language": Object {
+          "color": "#EFD427",
+          "name": "JavaScript",
+        },
+        "team": "Frontend",
+        "title": "Ersa",
+      },
+      Object {
+        "description": "Elixir statsd client.",
+        "github": "https://github.com/postmates/ex-stats-tracker",
+        "language": Object {
+          "color": "#E72619",
+          "name": "Elixir",
+        },
+        "team": "Infrastructure",
+        "title": "ex-stats-tracker",
+      },
+      Object {
+        "description": "An Elixir module for acquiring and releasing locks with Consul and other backends.",
+        "github": "https://github.com/postmates/consul_mut_ex",
+        "language": Object {
+          "color": "#E72619",
+          "name": "Elixir",
+        },
+        "team": "Infrastructure",
+        "title": "ConsulMutEx",
+      },
+      Object {
+        "description": "This crate is intended to be a collection of approxiate quantile algorithms that provide guarantees around space and computation.",
+        "github": "https://github.com/postmates/quantiles",
+        "language": Object {
+          "color": "#814C21",
+          "name": "Rust",
+        },
+        "team": "Infrastructure",
+        "title": "Quantiles",
+      },
+      Object {
+        "description": "A Rust mpsc with unbounded members in bounded memory.",
+        "github": "https://github.com/postmates/hopper",
+        "language": Object {
+          "color": "#814C21",
+          "name": "Rust",
+        },
+        "team": "Infrastructure",
+        "title": "Hopper",
+      },
+    ]
+  }
+/>
+`;

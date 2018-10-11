@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectList renders correctly 1`] = `
+<List>
+  <Project
+    description="Recentering slider/seek bar widget for android."
+    github="https://github.com/postmates/centersliderview-android"
+    key="Center Slider View"
+    language={
+      Object {
+        "color": "#A5C845",
+        "name": "Java",
+      }
+    }
+    team="Android"
+    title="Center Slider View"
+  />
+  <Project
+    description="Telemetry aggregation and shipping, last up the ladder."
+    github="https://github.com/postmates/cernan"
+    key="Cernan"
+    language={
+      Object {
+        "color": "#814C21",
+        "name": "Rust",
+      }
+    }
+    team="Infrastructure"
+    title="Cernan"
+  />
+  <Project
+    description="Utilities for Lightning Components in Visualforce"
+    github="https://github.com/postmates/salesforce-ersa"
+    key="Ersa"
+    language={
+      Object {
+        "color": "#EFD427",
+        "name": "JavaScript",
+      }
+    }
+    team="Frontend"
+    title="Ersa"
+  />
+  <Project
+    description="Elixir statsd client."
+    github="https://github.com/postmates/ex-stats-tracker"
+    key="ex-stats-tracker"
+    language={
+      Object {
+        "color": "#E72619",
+        "name": "Elixir",
+      }
+    }
+    team="Infrastructure"
+    title="ex-stats-tracker"
+  />
+  <Project
+    description="An Elixir module for acquiring and releasing locks with Consul and other backends."
+    github="https://github.com/postmates/consul_mut_ex"
+    key="ConsulMutEx"
+    language={
+      Object {
+        "color": "#E72619",
+        "name": "Elixir",
+      }
+    }
+    team="Infrastructure"
+    title="ConsulMutEx"
+  />
+  <Project
+    description="This crate is intended to be a collection of approxiate quantile algorithms that provide guarantees around space and computation."
+    github="https://github.com/postmates/quantiles"
+    key="Quantiles"
+    language={
+      Object {
+        "color": "#814C21",
+        "name": "Rust",
+      }
+    }
+    team="Infrastructure"
+    title="Quantiles"
+  />
+  <Project
+    description="A Rust mpsc with unbounded members in bounded memory."
+    github="https://github.com/postmates/hopper"
+    key="Hopper"
+    language={
+      Object {
+        "color": "#814C21",
+        "name": "Rust",
+      }
+    }
+    team="Infrastructure"
+    title="Hopper"
+  />
+</List>
+`;

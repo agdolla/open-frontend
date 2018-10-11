@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project renders correctly 1`] = `
+<ExternalLink
+  href="https://github.com/postmates/centersliderview-android"
+>
+  <Wrapper>
+    <Content>
+      <Details>
+        <Language
+          color="#A5C845"
+        >
+          Java
+        </Language>
+         
+        <Spacer>
+          ·
+        </Spacer>
+         
+        <Team>
+          Android
+        </Team>
+      </Details>
+      <Title>
+        Center Slider View
+      </Title>
+      <Description>
+        Recentering slider/seek bar widget for android.
+      </Description>
+    </Content>
+  </Wrapper>
+</ExternalLink>
+`;
