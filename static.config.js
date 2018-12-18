@@ -7,16 +7,17 @@ var route_1 = require("./src/utils/route");
 var types_1 = require("./src/utils/types");
 var data_1 = require("./data");
 var typescriptWebpackPaths = require('./webpack.config.js');
-var PRODUCTION_URL = 'https://open.postmates.com';
-var STAGING_URL = 'https://awesome-lamarr-c46055.netlify.com';
+var PRODUCTION_URL = 'https://postmates.com/open-source';
+var STAGING_URL = 'https://stage.postmates.com/open-source';
+var DEMO_URL = 'https://awesome-lamarr-c46055.netlify.com';
 exports["default"] = {
     plugins: ['react-static-plugin-emotion'],
     entry: path.join(__dirname, 'src', 'index.tsx'),
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     siteRoot: PRODUCTION_URL,
-    stagingSiteRoot: STAGING_URL,
+    stagingSiteRoot: DEMO_URL,
     getRoutes: function () {
-        var siteRoot = process.env.NODE_ENV === 'production' ? PRODUCTION_URL : STAGING_URL;
+        var siteRoot = process.env.NODE_ENV === 'production' ? PRODUCTION_URL : DEMO_URL;
         var teamRoutes = route_1.buildTeamRoutes(data_1.projects, siteRoot);
         var routes = [
             {
@@ -37,7 +38,7 @@ exports["default"] = {
     },
     Document: function (_a) {
         var Html = _a.Html, Head = _a.Head, Body = _a.Body, children = _a.children, renderMeta = _a.renderMeta;
-        var siteRoot = process.env.NODE_ENV === 'production' ? PRODUCTION_URL : STAGING_URL;
+        var siteRoot = process.env.NODE_ENV === 'production' ? PRODUCTION_URL : DEMO_URL;
         return (React.createElement(Html, null,
             React.createElement(Head, null,
                 React.createElement("meta", { charSet: "UTF-8" }),
@@ -73,6 +74,7 @@ exports["default"] = {
                 },
             ]
         });
+        console.info("Config - " + JSON.stringify(config, null, 2));
         return config;
     }
 };

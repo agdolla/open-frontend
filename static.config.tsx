@@ -7,18 +7,18 @@ import { projects } from './data';
 
 const typescriptWebpackPaths = require('./webpack.config.js');
 
-// const PRODUCTION_URL = 'https://open.postmates.com';
-const PRODUCTION_URL = 'https://engineering.postmates.com/open-frontend';
-const STAGING_URL = 'https://awesome-lamarr-c46055.netlify.com';
+const PRODUCTION_URL = 'https://postmates.com/open-source';
+const STAGING_URL = 'https://stage.postmates.com/open-source';
+const DEMO_URL = 'https://awesome-lamarr-c46055.netlify.com';
 
 export default {
   plugins: ['react-static-plugin-emotion'],
   entry: path.join(__dirname, 'src', 'index.tsx'),
   extensions: ['.js', '.jsx', '.ts', '.tsx'],
   siteRoot: PRODUCTION_URL,
-  stagingSiteRoot: STAGING_URL,
+  stagingSiteRoot: DEMO_URL,
   getRoutes: () => {
-    const siteRoot = process.env.NODE_ENV === 'production' ? PRODUCTION_URL : STAGING_URL;
+    const siteRoot = process.env.NODE_ENV === 'production' ? PRODUCTION_URL : DEMO_URL;
     const teamRoutes = buildTeamRoutes(projects, siteRoot);
     const routes = [
       {
@@ -39,7 +39,7 @@ export default {
     return routes;
   },
   Document: ({ Html, Head, Body, children, renderMeta }) => {
-    const siteRoot = process.env.NODE_ENV === 'production' ? PRODUCTION_URL : STAGING_URL;
+    const siteRoot = process.env.NODE_ENV === 'production' ? PRODUCTION_URL : DEMO_URL;
     return (
       <Html>
         <Head>
@@ -93,6 +93,7 @@ export default {
       ],
     });
 
+    console.info(`Webpack Config - ${JSON.stringify(config, null, 2)}`);
     return config;
   },
 };
