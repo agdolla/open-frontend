@@ -12,7 +12,7 @@ import spacing from 'style/variables/spacing';
 // https://developers.google.com/web/updates/2017/09/sticky-headers
 export const Nav = styled.nav`
   ${maxContentWidth};
-  border-bottom: 1px solid ${rgba(Colors.BlueMedium, 0.15)};
+  border-bottom: 1px solid ${rgba(Colors.LightGrey, 0.5)};
 
   ${below(desktop)} {
     padding-left: ${spacing.md};
@@ -43,16 +43,17 @@ export const Item = styled.li`
 export const StyledLink = styled(Link)<{ activeRoute?: boolean }>`
   ${fonts.s14.regular};
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid ${({ activeRoute }) =>
-    (activeRoute ? Colors.BlueBright : rgba(Colors.BlueBright, 0))};
-  color: ${({ activeRoute }) => (activeRoute ? Colors.BlueBright : Colors.BlueMedium)};
+  padding-bottom: 12px;
+  border-bottom:
+    ${({ activeRoute }) => (activeRoute ? '4px' : '1px')} solid
+    ${({ activeRoute }) => (activeRoute ? Colors.HighlighterYellow : rgba(Colors.Black, 0))};
+  color: ${({ activeRoute }) => (activeRoute ? Colors.Black : Colors.DarkGreyMedium)};
   ${({ activeRoute }) => activeRoute && 'font-weight: bold;'}
   transition: color 0.15s ease, border 0.15s ease;
+  line-height: 1.5;
 
   &:hover {
-    color: ${Colors.BlueBright};
-    border-bottom: 1px solid ${Colors.BlueBright};
+    color: ${Colors.Black};
+    border-bottom: 4px solid ${Colors.HighlighterYellow};
   }
 `;

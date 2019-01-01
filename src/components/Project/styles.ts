@@ -1,6 +1,5 @@
 import styled from 'react-emotion';
 import fonts from 'style/fonts';
-import tiemposText from 'style/fonts/tiemposText';
 import { Colors } from 'style/variables/palette';
 import { below } from 'style/mixins/breakpoints';
 import { tablet } from 'style/variables/breakpoints';
@@ -8,11 +7,12 @@ import { tablet } from 'style/variables/breakpoints';
 export const ExternalLink = styled.a<{ isFeatured?: boolean }>`
   display: flex;
   background: ${Colors.White};
-  transition: box-shadow 0.3s ease;
+  transition: border 0.2s ease;
   ${({ isFeatured }) => (isFeatured ? 'grid-column: 1 / 3;' : '')}
+  border: 8px solid ${Colors.LightGrey};
 
   &:hover {
-    box-shadow: 0 10px 24px 0 rgba(63, 86, 181, 0.2);
+    border: 8px solid ${Colors.HighlighterYellow};
   }
 
   ${below(tablet)} {
@@ -42,7 +42,7 @@ export const Content = styled.div`
 export const Details = styled.div`
   ${fonts.s11.bold};
   text-transform: uppercase;
-  color: ${Colors.BlueLight};
+  color: ${Colors.DarkGreyMedium};
   letter-spacing: normal;
 `;
 
@@ -63,8 +63,8 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
-  ${tiemposText.s14.regular};
+  ${fonts.s18.regular};
   margin: 0;
-  line-height: 1.71;
-  color: ${Colors.BlueText};
+  line-height: 1.56;
+  color: ${Colors.DarkGreyMedium};
 `;

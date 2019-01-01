@@ -7,7 +7,7 @@ var route_1 = require("./src/utils/route");
 var types_1 = require("./src/utils/types");
 var data_1 = require("./data");
 var typescriptWebpackPaths = require('./webpack.config.js');
-var PRODUCTION_URL = 'https://open.postmates.com';
+var PRODUCTION_URL = 'https://postmates.com/open-source';
 var STAGING_URL = 'https://awesome-lamarr-c46055.netlify.com';
 exports["default"] = {
     plugins: ['react-static-plugin-emotion'],
