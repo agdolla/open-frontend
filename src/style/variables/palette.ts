@@ -24,7 +24,7 @@ export enum Colors {
   BlueText = '#3F56B5',
   BlueBright = '#0C14F0',
   DarkGreyMedium = '#8f95a3',
-  LightGrey = '#d8d8d8',
+  LightGrey = '#f6f6f8',
   BlueLight = '#8C9AD6',
   HighlighterYellow = '#fffc11',
 }
