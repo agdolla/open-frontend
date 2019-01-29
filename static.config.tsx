@@ -7,8 +7,7 @@ import { projects } from './data';
 
 const typescriptWebpackPaths = require('./webpack.config.js');
 
-// const PRODUCTION_URL = 'https://open.postmates.com';
-const PRODUCTION_URL = 'https://engineering.postmates.com/open-frontend';
+const PRODUCTION_URL = 'https://postmates.com/open-source';
 const STAGING_URL = 'https://awesome-lamarr-c46055.netlify.com';
 
 export default {

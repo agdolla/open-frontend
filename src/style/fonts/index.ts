@@ -20,9 +20,9 @@ const matrix = {
   10: [undefined, undefined, undefined, 0.56],
   11: [undefined, undefined, undefined, 0.64],
   12: [0.19, -0.10, -0.24, 0.72],
-  14: [0.14, -0.16, -0.36, undefined],
+  14: [0.14, -0.16, -0.1, undefined],
   16: [0.14, -0.28, -0.48, undefined],
-  18: [undefined, -0.36, -0.64, undefined],
+  18: [undefined, -0.36, 0.14, undefined],
   21: [undefined, -0.56, -0.88, undefined],
   24: [undefined, -0.80, -1.16, undefined],
   28: [undefined, undefined, -1.44, undefined],
@@ -31,7 +31,7 @@ const matrix = {
   42: [undefined, undefined, -2.40, undefined],
   48: [undefined, undefined, -1.8, undefined],
   64: [undefined, undefined, -2.2, undefined],
-  72: [undefined, undefined, -3.00, undefined],
+  72: [undefined, undefined, -3.9, undefined],
 };
 
 const lineHeights = {

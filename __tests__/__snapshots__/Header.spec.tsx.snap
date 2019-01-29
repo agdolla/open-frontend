@@ -6,7 +6,7 @@ exports[`Header renders correctly 1`] = `
     <TextWrapper>
       <img
         alt="postmates"
-        src="/images/brandmark.svg"
+        src="/images/logo.svg"
       />
       <Title>
         Postmates 

@@ -7,11 +7,10 @@ const Header = () => (
   <Wrapper>
     <Content>
       <TextWrapper>
-        <img src="/images/brandmark.svg" alt="postmates" />
+        <img src="/images/logo.svg" alt="postmates" />
         <Title>Postmates <br /> Open Source</Title>
         <Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua....
+           We love open-source software. Check out some of the projects we've shared with the community.
         </Description>
       </TextWrapper>
       <ImageWrapper>

@@ -21,14 +21,14 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-  ${fonts.s64.bold};
+  ${fonts.s72.bold};
   margin-top: 20px;
   margin-bottom: 12px;
 `;
 
 export const Description = styled.p`
-  ${teimposText.s18.regular};
-  color: ${Colors.BlueText};
+  ${fonts.s14.regular};
+  color: ${Colors.Black};
   line-height: 1.56;
   padding-right: 40px;
 `;

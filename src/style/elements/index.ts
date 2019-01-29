@@ -4,8 +4,8 @@ import { tablet } from 'style/variables/breakpoints';
 
 export const PageContainer = styled.div`
   margin: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 300px;
+  padding-top: 64px;
+  padding-bottom: 128px;
 
   ${below(tablet)} {
     padding-top: 32px;

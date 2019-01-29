@@ -23,8 +23,10 @@ export enum Colors {
   BlueBorder = '#F4F5FB',
   BlueText = '#3F56B5',
   BlueBright = '#0C14F0',
-  BlueMedium = '#5F73C6',
+  DarkGreyMedium = '#8f95a3',
+  LightGrey = '#f6f6f8',
   BlueLight = '#8C9AD6',
+  HighlighterYellow = '#fffc11',
 }
 
 export default {
