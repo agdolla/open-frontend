@@ -1,1 +1,1 @@
-{"path":"ios","templateID":2,"sharedPropsHashes":{},"localProps":{"projects":[],"title":"Postmates Open Source - iOS","description":"Open source software at Postmates.","url":"https://engineering.postmates.com/open-frontend/ios","siteRoot":"https://engineering.postmates.com/open-frontend"}}
+{"template":"../src/pages/ProjectPage","sharedHashesByProp":{},"data":{"projects":[],"title":"Postmates Open Source - iOS","description":"Open source software at Postmates.","url":"https://postmates.com/open-source/ios","siteRoot":"https://postmates.com/open-source"},"path":"ios"}
