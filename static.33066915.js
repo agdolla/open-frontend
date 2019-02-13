@@ -580,7 +580,7 @@ function _getRouteInfo() {
           case 18:
             // In production, fetch the JSON file
             // Find the location of the routeInfo.json file
-            routeInfoRoot = ( false ? undefined : "https://postmates.com/") || false;
+            routeInfoRoot = ( false ? undefined : "https://engineering.postmates.com/") || false;
             cacheBuster = process.env.REACT_STATIC_CACHE_BUST ? "?".concat(process.env.REACT_STATIC_CACHE_BUST) : '';
             getPath = "".concat(routeInfoRoot).concat((0, _utils.pathJoin)(path, 'routeInfo.json')).concat(cacheBuster); // If this is a priority call bypass the queue
 
@@ -7240,4 +7240,4 @@ if (typeof document !== 'undefined') {
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=static.8f608d90.js.map
+//# sourceMappingURL=static.33066915.js.map
