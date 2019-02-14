@@ -4,7 +4,7 @@ export enum Meta {
 }
 
 export interface Language {
-  name: string;
+  name: string; // eslint-disable-line
   color: string;
 }
 

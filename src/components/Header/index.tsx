@@ -1,7 +1,9 @@
 import * as React from 'react';
 import Animation from 'components/Animation';
 
-import { Wrapper, Content, Title, Description, TextWrapper, ImageWrapper } from './styles';
+import {
+  Wrapper, Content, Title, Description, TextWrapper, ImageWrapper,
+} from './styles';
 
 const Header = () => (
   <Wrapper>
@@ -10,7 +12,8 @@ const Header = () => (
         <img src="/images/logo.svg" alt="postmates" />
         <Title>Postmates <br /> Open Source</Title>
         <Description>
-           We love open-source software. Check out some of the projects we've shared with the community.
+           We love open-source software. Check out some of the projects we have
+           shared with the community.
         </Description>
       </TextWrapper>
       <ImageWrapper>

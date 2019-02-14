@@ -1,5 +1,5 @@
 import styled from 'react-emotion';
-import { Link } from 'react-static';
+import { Link } from '@reach/router';
 import fonts from 'style/fonts';
 import { Colors } from 'style/variables/palette';
 import { rgba } from 'utils/color';

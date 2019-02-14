@@ -20,8 +20,8 @@ if (typeof document !== 'undefined') {
   };
 
   render(App);
+
   if (module.hot) {
-    // eslint-disable-next-line global-require
-    module.hot.accept('./App.tsx', () => render(require('./App.tsx').default));
+    module.hot.accept('./App', () => render(import('./App')));
   }
 }

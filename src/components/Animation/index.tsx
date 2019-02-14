@@ -1,6 +1,8 @@
 import * as React from 'react';
 
-import { Wrapper, Cube, Front, Back, Top, Bottom, Left, Right } from './styles';
+import {
+  Wrapper, Cube, Front, Back, Top, Bottom, Left, Right,
+} from './styles';
 
 const Animation = ({ time = 60, marginTop = 0 }) => (
   <Wrapper marginTop={marginTop}>

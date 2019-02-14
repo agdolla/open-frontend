@@ -4,6 +4,9 @@ import { tablet, desktop } from 'style/variables/breakpoints';
 import { maxContentWidth } from 'style/mixins/spacing';
 import spacing from 'style/variables/spacing';
 
+export const Wrapper = styled.div`
+  min-height: 100vh;
+`;
 
 export const List = styled.main`
   ${maxContentWidth}

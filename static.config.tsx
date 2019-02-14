@@ -5,13 +5,11 @@ import { buildTeamRoutes } from './src/utils/route';
 import { Meta } from './src/utils/types';
 import { projects } from './data';
 
-const typescriptWebpackPaths = require('./webpack.config.js');
-
-const PRODUCTION_URL = 'https://postmates.com/open-source';
-const STAGING_URL = 'https://awesome-lamarr-c46055.netlify.com';
+const PRODUCTION_URL = 'https://postmates.io';
+const STAGING_URL = 'https://lucid-haibt-0d7d82.netlify.com';
 
 export default {
-  plugins: ['react-static-plugin-emotion'],
+  plugins: ['react-static-plugin-typescript'],
   entry: path.join(__dirname, 'src', 'index.tsx'),
   extensions: ['.js', '.jsx', '.ts', '.tsx'],
   siteRoot: PRODUCTION_URL,
@@ -64,34 +62,5 @@ export default {
         <Body>{children}</Body>
       </Html>
     );
-  },
-  webpack: (config, { defaultLoaders }) => {
-    // eslint-disable-next-line no-param-reassign
-    config.resolve.extensions = [
-      ...config.resolve.extensions,
-      ...typescriptWebpackPaths.resolve.extensions,
-    ];
-
-    // eslint-disable-next-line no-param-reassign
-    config.resolve.alias = typescriptWebpackPaths.resolve.alias;
-
-    config.module.rules[0].oneOf.unshift({
-      test: /\.(t|j)sx?$/,
-      exclude: defaultLoaders.jsLoader.exclude,
-      use: [
-        {
-          loader: 'babel-loader',
-        },
-        {
-          loader: 'ts-loader',
-          options: {
-            transpileOnly: true,
-            happyPackMode: true,
-          },
-        },
-      ],
-    });
-
-    return config;
   },
 };

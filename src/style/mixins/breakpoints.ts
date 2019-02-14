@@ -13,7 +13,9 @@ const isMediaQuery = (mediaQuery: MediaQuery): any => /^@media/.test(mediaQuery)
 
 export class Breakpoint {
   start: Nullable<number>;
+
   end: Nullable<number>;
+
   constructor(start: Nullable<number>, end: Nullable<number>) {
     isBreakpoint(start, end);
     this.start = start;
@@ -115,11 +117,11 @@ function between(
 function at(...bps: Breakpoint[]): MediaQuery {
   let bp;
 
-  bps.forEach(bp => isBreakpoint(bp.start, bp.end));
+  bps.forEach((bp) => isBreakpoint(bp.start, bp.end));
   if (bps.length > 1) {
     bp = mergeBps(bps);
   } else {
-    bp = bps[0];
+    [bp] = bps;
   }
 
   if (!bp.start && bp.end) return below(bp.end, true);

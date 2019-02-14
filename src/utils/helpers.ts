@@ -36,8 +36,9 @@ export const mapNullToUndefined = (o: any) => {
 
   return mapValues(o, (v) => {
     if (isArray(v)) {
-      return (v as any[]).map(av => mapNullToUndefined(av));
-    } else if (isObject(v)) {
+      return (v as any[]).map((av) => mapNullToUndefined(av));
+    }
+    if (isObject(v)) {
       return mapNullToUndefined(v);
     }
     return v === null ? undefined : v;
@@ -46,4 +47,4 @@ export const mapNullToUndefined = (o: any) => {
 
 export const noop = (..._: any[]): void => {};
 
-export const convertNameToSlug = name => name.toLowerCase().replace(' ', '-');
+export const convertNameToSlug = (name) => name.toLowerCase().replace(' ', '-');

@@ -3,7 +3,7 @@ import { mobile, tablet, desktop } from 'style/variables/breakpoints';
 import { above, Breakpoint } from 'style/mixins/breakpoints';
 import spacing from 'style/variables/spacing';
 
-const enum GUTTER_TYPES {
+enum GUTTER_TYPES {
   PADDING = 'padding',
   MARGIN = 'margin',
 }

@@ -2,7 +2,7 @@ import { convertNameToSlug } from './helpers';
 import { Teams, Meta } from './types';
 
 export const getProjectsForTeam = (projects, team) =>
-  projects.filter(project => project.team === team);
+  projects.filter((project) => project.team === team);
 
 export const buildTeamRoutes = (projects, siteRoot) => (
   Object.keys(Teams).map((team) => {

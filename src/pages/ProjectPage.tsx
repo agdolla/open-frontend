@@ -16,7 +16,9 @@ interface Props {
   siteRoot: string;
 }
 
-const ProjectPage = ({ projects = [], title, description, url, siteRoot }: Props) => (
+const ProjectPage = ({
+  projects = [], title, description, url, siteRoot,
+}: Props) => (
   <PageContainer>
     <PageMeta title={title} description={description} url={url} siteRoot={siteRoot} />
     <Header />

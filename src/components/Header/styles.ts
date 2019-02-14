@@ -1,7 +1,6 @@
 import styled from 'react-emotion';
 import fonts from 'style/fonts';
 import { Colors } from 'style/variables/palette';
-import teimposText from 'style/fonts/tiemposText';
 import { below } from 'style/mixins/breakpoints';
 import { tablet } from 'style/variables/breakpoints';
 import { gutter, maxContentWidth } from 'style/mixins/spacing';

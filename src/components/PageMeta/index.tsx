@@ -10,7 +10,9 @@ interface Props {
   siteRoot: string;
 }
 
-const PageMeta = ({ title, description, url, siteRoot }: Props) => {
+const PageMeta: React.FC<Props> = ({
+  title, description, url, siteRoot,
+}) => {
   const image = `${siteRoot}/dev-logo.png`;
   return (
     <Head>
